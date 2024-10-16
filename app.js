@@ -5,6 +5,7 @@ const choices = document.querySelectorAll(".choice");
 const msg = document.querySelector("#msg");
 const userScorePara = document.querySelector("#user-score");
 const compScorePara = document.querySelector("#comp-score");
+const resetBtn = document.querySelector("#reset-btn");
 
 const genCompChoice = () => {
   const options = ["rock", "paper", "scissors"];
@@ -57,4 +58,12 @@ choices.forEach((choice) => {
     const userChoice = choice.getAttribute("id");
     playGame(userChoice);
   })
+});
+
+resetBtn.addEventListener("click", () => {
+  userScorePara.innerText = 0;
+  compScorePara.innerText = 0;
+  msg.innerText = 'Play your move';
+  msg.style.backgroundColor = '#081b31';
+  console.log('reset');
 });

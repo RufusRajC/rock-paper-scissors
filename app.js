@@ -65,5 +65,5 @@ resetBtn.addEventListener("click", () => {
   compScorePara.innerText = 0;
   msg.innerText = 'Play your move';
   msg.style.backgroundColor = '#081b31';
-  console.log('reset');
+  //console.log('reset');
 });

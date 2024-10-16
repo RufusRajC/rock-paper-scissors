@@ -61,8 +61,10 @@ choices.forEach((choice) => {
 });
 
 resetBtn.addEventListener("click", () => {
-  userScorePara.innerText = 0;
-  compScorePara.innerText = 0;
+  userScore = 0;
+  compScore = 0;
+  userScorePara.innerText = userScore;
+  compScorePara.innerText = compScore;
   msg.innerText = 'Play your move';
   msg.style.backgroundColor = '#081b31';
   //console.log('reset');
